@@ -1,0 +1,192 @@
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(216, 105, 1);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+}
+.find {
+    width: 300px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 100px;
+}
+.kinotitle {
+    cursor:pointer;
+    color: white; 
+    font-size: 50px; 
+    margin: 10px 100px;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.films {
+    padding-top: 125px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.film {
+    width: 23%;
+    background-color: black;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.filmimg {
+    border: 1px solid grey;
+    width: 99%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.title {
+    color: white;
+    font-size: medium;
+}
+.filmchild {
+    margin: 2px;
+}
+#moreinf {
+    background-color: rgb(216, 141, 1);
+    border: 1px solid black;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+.page {
+    width: 140px;
+    margin: 10px 44.5%;
+    background-color:rgb(216, 141, 1);
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: large;
+}
+.findedfilms {
+    right: 30px;
+    margin-top: 80px;
+    width: 40%;
+    height: 80%;
+    position: fixed;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: block;
+    z-index: 999;
+    overflow: auto;
+}
+.findlist {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.findedfilm {
+    width: 47%;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+}
+.title2 {
+    color: black;
+    font-size: 15px;
+}
+.zatem {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: black;
+    opacity: .3;
+}
+
+
+.filmbody {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.filmpic {
+    padding-top: 5%;
+    height: auto;
+    width: 30%;
+    height: 60%;
+    text-align: center;
+}
+.information {
+    width: 100%;
+    margin-left: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+}
+.otzyvi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.sendbtn {
+    background-color: rgb(216, 141, 1);
+    border-radius: 5px;
+    height: 30px;
+}
+.filminf {
+    width: 70%;
+    margin-left: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.ocenka {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(216, 141, 1);
+    color: white;
+    border-radius: 5px;
+}
+.comments {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    border: 1px solid white;
+    width: 100%;
+}
+.username {
+    width: 20%;
+    color:rgb(216, 141, 1);
+    text-align: center;
+}
+.usercomment {
+    width: 78%;
+    color: white;
+}
+.userrating {
+    width: 2%;
+    color: greenyellow;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naebalova.net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="finder"></div>
+    <header>
+        <a class="kinotitle" href="index.html"><span style="font-size: 50px;">←</span><b>Фильмопоиск</b></a>
+        <input class="find" placeholder="Поиск" type="text" oninput="findplease()">
+    </header>
+    <div class="filmbody">
+        <div class="filmpic"></div>
+        <div class="filminf">
+            <div class="information"></div>
+            <div class="otzyvi">
+                <div style="margin: 0px 40px; font-size: 30px; color: white;"><b>Отзывы</b></div>
+                <table class="comments">
+                    <tbody style="width:100%;" id="table">
+
+                    </tbody>
+                </table>
+
+                <div style="display: flex">
+                    <div style="color:white; margin: 5px 5px; font-size: medium;">Оцените фильм:</div>
+                    <select class="ocenka">
+                        <option>10</option>
+                        <option>9</option>
+                        <option>8</option>
+                        <option>7</option>
+                        <option>6</option>
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                    </select>
+                </div>
+                <div style="color:white; margin: 0px 5px; font-size: medium; margin-top: 5px;">Напишите отзыв:</div>
+                <div style="display:flex; flex-direction:row; margin-top: 5px;">
+                    <input class="message" style="width: 600px; height: 60px; border-radius: 10px;">
+                    <button class="sendbtn">Отправить</button>
+                </div>
+                <div class="newotzyv"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="film.js"></script>
+</body>
+</html>

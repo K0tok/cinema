@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin naebalova.net</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body style="height: 1000px; width: 100%; margin: 0; background-color: black">
+    <div class="registr">
+        <div style="font-size: 39px;"><b>Вход в админскую панель</b></div>
+        <div style="margin-top: 10px;">
+            <div class="reg-text">Логин</div>
+            <input class="reg-input" id="log">
+        </div>
+        <div style="margin-top: 10px;">
+            <div class="reg-text">Пароль</div>
+            <input class="reg-input" id="pas">
+        </div>
+        <button class="sendbtn">Войти</button>
+    </div>
+    <script src="admin.js"></script>
+    <script>
+        const sendbtn = document.querySelector('.sendbtn');
+        sendbtn.addEventListener("click", entry);
+        function entry() {
+            const log = document.querySelector('#log').value
+            const pas = document.querySelector('#pas').value
+            if (log === 'loser' && pas === '1234') {
+                location.href = `admin_panel.html?id=${log}`
+            } else {
+                console.log('Ты лузер!')
+            }
+        }
+    </script>
+</body>
+</html>

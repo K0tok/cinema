@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin naebalova.net</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <a class="kinotitle" href="index.html"><b>Фильмопоиск</b></a>
+        <div class="reg-name"></div>
+    </header>
+    <div class="movie-maker">
+        <div style="align-self: center; font-size: 50px;"><b>Добавление фильма</b></div>
+        <div class="filmbody">
+            <div class="filmpic">
+                <div style="font-size: 20px;">
+                    <div>Добавьте постер для фильма:</div><input type="file" accept="image/*" name="filmPoster" style="font-size: 20px;">
+                </div>
+                <!-- <img style="width:100%; border:1px solid white; border-radius: 5px;" src=""> -->
+                <div style="font-size:20px; color: white;"><b>Рейтинг: <input style="font-size:20px; width: 30px;" id="rating"></b></div>
+            </div>
+            <div class="filminf">
+                <div class="information">
+                    <div style="text-align: center; font-size: 45px;"><b>Название: </b><input style="font-size:45px; width: auto;" id="rating"></div>
+                    <div style="margin: 10px auto; margin-bottom: 50px;">Название на английском: <input style="font-size:20px; width: auto;" id="rating"></div>
+                    <div style="margin: 0px 60px; font-size: 30px;"><b>О фильме</b></div>
+                    <div style="margin: 0 20px;">
+                        <p><b>Страна:</b> <input style="font-size:20px; width: 150px;" id="rating"></p>
+                        <p><b>Год производства:</b> <input style="font-size:20px; width: 50px;" id="rating"></p>
+                        <p><b>Жанр:</b> <input style="font-size:20px; width: 150px;" id="rating"></p>
+                        <p><b>Слоган:</b> <textarea style="font-size:20px; width: 500px; height: 50px;" id="rating"></textarea></p>
+                        <p><b>Описание:</b> <textarea style="font-size:20px; width: 500px; height: 50px;" id="rating"></textarea></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="admin_panel.js"></script>
+</body>
+</html>
